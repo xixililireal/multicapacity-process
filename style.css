@@ -1,0 +1,404 @@
+/*可以学习下侧边栏样式 运用下图片*/
+
+
+
+/*主体样式定义*/
+
+*{margin:0;padding:0; font-size:12px; line-height:25px;}
+body
+{ 
+   font-family: "微软雅黑","仿宋", "黑体", "楷体", "隶书", "宋体", "新宋体", "幼圆";
+   color:#fff;
+   text-align:justify;
+   background-image:url(image/bg-body.gif);
+}
+#background
+{
+	background:url(image/bg-page-top-curve.jpg) no-repeat top center;
+}
+#header
+{
+	width:950px;
+	margin:0 auto;
+	padding:0 5px;
+}
+#header .page
+{
+	padding:78px 0 0 0;
+}
+#header .page .fot
+{
+	background:url(image/bg-page-bottom-curve.jpg) no-repeat bottom center;
+	padding:0 0 5px 0;
+}
+#header .page .fot .body
+{
+	background-image:url(image/bg-page.jpg);
+	width:950px;
+	/* height:auto;*/ 
+	overflow:hidden;
+}
+#header .page .shadow
+{
+	background:url(image/bottom-shadow.jpg) no-repeat center;
+	height:35px;
+}
+
+/*侧边栏样式*/
+
+#header .page .fot .body #aside
+{
+	width:211px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+#header .page .fot .body #aside img
+{
+	border:0;
+	margin:20px 0px 20px 20px;
+}
+#header .page .fot .body #aside ul
+{
+	margin:0 0 50px 0px;
+	padding:5px 0 0 0;
+	list-style:none;
+	background:url(image/border-dashed.gif) repeat-x top;
+	position:relative;
+	width:200px;
+	z-index:9990;
+}
+#header .page .fot .body #aside ul li
+{
+	width:200px;
+	height:40px;
+	position:relative;
+	line-height:40px;
+	background:url(image/menu-separator.jpg) no-repeat 0 38px;	
+}
+#header .page .fot .body #aside ul li .last
+{
+	background:url(image/border-dashed.gif) repeat-x bottom;
+}
+#header .page .fot .body #aside ul li a
+{
+	width: 214px;
+	height: 40px;
+	/*height:40px;*/
+	display: block;
+	text-align: center;
+	color: #999;
+	text-decoration: none;
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	padding: 10px 3px;
+}
+#header .page .fot .body #aside ul li a:hover
+{
+	width:214px;
+	height:40px;
+	/*height:40px;*/
+	display:block;
+	position:absolute;
+	color:#693;
+	background:url(image/sprite.gif) no-repeat 200px -228px;
+	text-shadow:#fff 2px 0px 1px;/*设置或检索对象中文本的文字是否有阴影及模糊效果，语法：text-shadow:color|length|length|opacity(颜色|阴影的水平延伸距离|阴影的垂直延伸距离|模糊效果的作用距离)*/
+}
+ .active a
+{
+	width:214px;
+	height:40px;
+	/*height:40px;*/
+	display:block;
+	color:#693;
+	position:absolute;
+	background:url(image/sprite.gif) no-repeat 200px -228px;
+	text-shadow:#fff 2px 0px 1px;
+}
+#header .page .fot .body #aside .footer
+{
+	background:url(image/bg-social-sites.jpg) no-repeat;
+	height:49px;
+	width:186px;
+	margin:0 auto;
+}
+ .footer a
+{
+	display:block;
+	float:left;
+	text-decoration:none;
+	margin:10px 10px 0px 20px;
+}
+ .facebook
+{
+	background:url(image/sprite.gif) no-repeat 0 0;
+	width:25px;
+	height:26px;
+	margin-left:20px;
+}
+ .twitter
+{
+	background:url(image/sprite.gif) no-repeat 0 -76px;
+	width:37px;
+	height:26px;
+}
+.vimeo
+{
+	width:32px;
+	height:26px;
+	background:url(image/sprite.gif) no-repeat 0 -152px;
+}
+#header .page .fot .body #aside .foter
+{
+	width:186px;
+	margin:0 auto;
+	padding-top:50px;
+}
+#header .page .fot .body #aside .foter span
+{
+	display:block;
+	text-align:center;
+	font-size:10px;
+	color:#ccc;
+}
+ .foter span a
+{
+	color:#ccc;
+	text-decoration:none;
+}
+ .foter span a:hover
+{
+	color:#999;
+}
+
+/*内容样式*/
+#header .page .fot .body #content
+{
+	width:739px;
+	float:left;
+	padding-bottom:50px;
+	overflow:hidden;
+}
+
+#header .page .fot .body #content .cont
+{
+	width:600px;
+	display:block;
+	/*position:relative;
+	z-index:20px;
+	margin:-473 0 25 432;
+	overflow:visible;*/
+}
+
+#header .page .fot .body #content .cont .bodybar
+{
+	width:585px;
+	position:relative;
+	z-index:40;
+	top:-390px;
+	left:70px;
+	height:400px;
+	margin:0 10px;
+}
+
+ 
+#header .page .fot .body #content .cont .head
+{
+	/*height:160px;*/
+	width:585px;
+	position:absolute;
+	top:90px;
+	left:490px;
+}
+#header .page .fot .body #content .cont .head ul
+{
+	
+	width:580px;
+	/*float:left;*/
+	margin:0;
+	padding:0;
+}
+#header .page .fot .body #content .cont .head ul li
+{
+	list-style:none;
+	float:left;
+	padding:0 5px;
+	line-height:5px;
+}
+
+#header .page .fot .body #content .cont .head ul li p
+{
+	
+	height:100px;
+	margin-top:30;
+	padding-left:10px;
+	text-indent:2em;
+}
+ .first
+{
+	width:50px;
+	height:62px;
+	float:left;
+	text-align:center;
+	padding-top:5px;
+	position:relative;
+}
+ .last1
+{
+	width:500px;
+	height:150px;
+	float:left;
+	position:absolute;
+	top:3px;
+	left:63px;
+}
+.cont .bodybar p
+{
+	padding:0 20px 0 20px;
+	margin-left:0px;
+	text-indent:2em;
+	/*color:black;*/
+}
+/*内容样式多肉特点*/
+#header .page .fot .body #content .content1
+{
+	background:url(image/bg-inner-page.jpg) repeat-y;
+	width:724px;
+	float:left;
+	padding-top:5px;
+	overflow:visible;
+}
+#header .page .fot .body #content .content1 ol li
+{
+	list-style-type:decimal;
+	padding-left:5px;
+}
+#header .page .fot .body #content .content1 ol li p
+{
+	text-indent:2em;
+}
+/*内容样式多肉种类*/
+
+#header .page .fot .body #content .content2
+{
+	background:url(image/bg-inner-page.jpg) repeat-y;
+	width:730px;
+	height:auto;
+	margin:0 auto;
+	padding-top:5px;
+	overflow:hidden;
+}
+.content2 ul
+{
+	margin:0;
+	padding:0;
+}
+ .content2 ul .article li
+{
+	list-style-type:none;
+	list-style:none;
+	display:block;
+	float:left;
+	/*padding-bottom:10px;
+	margin-top:10px;*/
+	overflow:hidden;
+}
+ .article li img
+{
+	float:left;
+	margin：5px 0px 0px 0px;
+	padding-left:5px;
+	/*padding-top:5px;*/
+}
+.article li h1
+{
+	margin-top:0px;
+	padding:0;
+}
+.article li h1 a
+{
+	text-decoration:none;
+	font:14px bold italic;
+	color:#fff;
+}
+.article li h1 a:hover
+{
+	font:14px italic bold;
+	color:#ccc;
+}
+ .article li p
+{
+	
+	text-indent:2em;
+	color:#fff;
+	margin-top:10px;
+	line-height:15px;
+	font-size:12px;
+	width:600px;
+}
+.article li p span
+{
+	font-weight:bold;
+	color:red;
+}
+.article li p a
+{
+	font: italic bold;
+	color:#fff;
+	text-decoration:none;
+}
+.article li p a:hover
+{
+	font: italic bold;
+	color:#ccc;
+}
+
+/*内容样式管理养护*/
+#header .page .fot .body #content .content3
+{
+	background:url(image/bg-inner-page.jpg) repeat-y;
+	width:724px;
+	float:left;
+	padding-top:5px;
+	overflow:visible;
+}
+#header .page .fot .body #content .content3 ol li
+{
+	list-style-type:decimal;
+	padding-left:5px;
+}
+#header .page .fot .body #content .content3 ol li p
+{
+	text-indent:2em;
+}
+/*内容样式关于我们*/
+#header .page .fot .body #content .content4
+{
+	background:url(image/bg-inner-page.jpg) repeat-y;
+	width:724px;
+	float:left;
+	padding-top:5px;
+	overflow:visible;
+	position:absolute;
+	top:200px;
+}
+#header .page .fot .body #content .content4 ol li
+{
+	list-style-type:none;
+	padding-left:5px;
+}
+#header .page .fot .body #content .content4 ol li a
+{
+	text-decoration:none;
+	color:#fff;
+}
+#header .page .fot .body #content .content4 ol li a:hover
+{
+	font:14px italic bold;
+}
+	
+#header .page .fot .body #content .content4 ol li p
+{
+	text-indent:2em;
+}
